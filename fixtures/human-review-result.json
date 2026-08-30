@@ -1,0 +1,39 @@
+{
+  "source_file": "fixtures/triage-result-synthetic-review-case.json",
+  "synthetic_source": true,
+  "fields": {
+    "invoice_number": {
+      "value": "INV-2026-001",
+      "confidence": 0.95,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    },
+    "supplier": {
+      "original_value": "ACME Test Services Ltd",
+      "original_confidence": 0.62,
+      "original_status": "NEEDS_HUMAN_REVIEW",
+      "reviewer_decision": "VALIDATED",
+      "reviewed_value": "ACME Test Services Ltd",
+      "reviewer_note": "Le réviseur confirme que la valeur extraite est correcte malgré la confidence basse.",
+      "status": "HUMAN_VALIDATED",
+      "decision_source": "human_review_simulation"
+    },
+    "total_amount": {
+      "value": 125000,
+      "confidence": 0.9696927825876808,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    },
+    "invoice_date": {
+      "original_value": "2026-08-30",
+      "original_confidence": null,
+      "original_status": "NEEDS_HUMAN_REVIEW",
+      "reviewer_decision": "REJECTED",
+      "reviewed_value": "2026-08-29",
+      "reviewer_note": "Le réviseur corrige la date : la valeur extraite était incorrecte (exemple synthétique).",
+      "status": "HUMAN_REJECTED",
+      "decision_source": "human_review_simulation"
+    }
+  },
+  "generated_note": "Ce fichier contient des décisions humaines simulées (decision_source: human_review_simulation) pour les champs synthétiquement placés en revue. Il ne représente aucun appel DWS réel."
+}

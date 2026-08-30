@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "purpose": "Cas de test synthétique créé pour exercer le chemin NEEDS_HUMAN_REVIEW, absent du résultat réel de RUN02 (fixtures/triage-result.json), qui est 4/4 AUTO_VALIDATED. Ce fichier n'est dérivé d'aucun appel DWS ; certaines confidences ont été volontairement abaissées ou omises à des fins de test uniquement.",
+  "source_file": "N/A - synthetic, not derived from fixtures/extract-proof.json",
+  "threshold": 0.9,
+  "fields": {
+    "invoice_number": {
+      "value": "INV-2026-001",
+      "confidence": 0.95,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    },
+    "supplier": {
+      "value": "ACME Test Services Ltd",
+      "confidence": 0.62,
+      "status": "NEEDS_HUMAN_REVIEW",
+      "reason": "confidence < 0.90 (synthetically lowered for test purposes, not a real DWS value)"
+    },
+    "total_amount": {
+      "value": 125000,
+      "confidence": 0.9696927825876808,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    },
+    "invoice_date": {
+      "value": "2026-08-30",
+      "confidence": null,
+      "status": "NEEDS_HUMAN_REVIEW",
+      "reason": "confidence not available (synthetic case for test purposes, not a real DWS value)"
+    }
+  },
+  "global_verdict": "PARTIAL_REVIEW_REQUIRED",
+  "summary": {
+    "auto_validated_count": 2,
+    "needs_review_count": 2
+  }
+}
