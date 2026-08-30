@@ -1,0 +1,41 @@
+{
+  "synthetic_source": true,
+  "source_note": "Document consolidé à partir d'un cas synthétique. Les décisions HUMAN_* proviennent de human_review_simulation et ne représentent pas une revue humaine réelle.",
+  "generated_from": "fixtures/triage-result-synthetic-review-case.json",
+  "final_document": {
+    "invoice_number": "INV-2026-001",
+    "supplier": "ACME Test Services Ltd",
+    "total_amount": 125000,
+    "invoice_date": "2026-08-29"
+  },
+  "field_trace": {
+    "invoice_number": {
+      "value": "INV-2026-001",
+      "source": "AUTO_VALIDATED",
+      "confidence": 0.95
+    },
+    "supplier": {
+      "value": "ACME Test Services Ltd",
+      "source": "HUMAN_REVIEW",
+      "human_status": "HUMAN_VALIDATED",
+      "decision_source": "human_review_simulation",
+      "original_value": "ACME Test Services Ltd",
+      "original_confidence": 0.62,
+      "original_status": "NEEDS_HUMAN_REVIEW"
+    },
+    "total_amount": {
+      "value": 125000,
+      "source": "AUTO_VALIDATED",
+      "confidence": 0.9696927825876808
+    },
+    "invoice_date": {
+      "value": "2026-08-29",
+      "source": "HUMAN_REVIEW",
+      "human_status": "HUMAN_REJECTED",
+      "decision_source": "human_review_simulation",
+      "original_value": "2026-08-30",
+      "original_confidence": null,
+      "original_status": "NEEDS_HUMAN_REVIEW"
+    }
+  }
+}
