@@ -1,0 +1,180 @@
+{
+  "endpoint": "https://api.nutrient.io/extraction/extract",
+  "fixture": "fixtures/invoice-test.pdf",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "invoice_number": {
+        "type": "string",
+        "description": "Invoice identifier"
+      },
+      "supplier": {
+        "type": "string",
+        "description": "Supplier or vendor name"
+      },
+      "total_amount": {
+        "type": "number",
+        "description": "Final total amount on the invoice"
+      },
+      "invoice_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Invoice date"
+      }
+    },
+    "required": [
+      "invoice_number",
+      "total_amount"
+    ]
+  },
+  "outcome": "SUCCESS",
+  "response_status": 200,
+  "output": {
+    "data": {
+      "invoice_number": "INV-2026-001",
+      "supplier": "ACME Test Services Ltd",
+      "total_amount": 125000,
+      "invoice_date": "2026-08-30"
+    },
+    "metadata": {
+      "invoice_number": {
+        "bbox": {
+          "height": 27,
+          "width": 200,
+          "x": 438,
+          "y": 463
+        },
+        "confidence": 0.95,
+        "confidenceComponents": {
+          "groundingScore": 0.95,
+          "source": "no-logprobs"
+        },
+        "match": "id_match",
+        "pageIndex": 0,
+        "pageNumber": 1,
+        "source_bboxes": [
+          {
+            "bbox": {
+              "height": 111.99172973632812,
+              "width": 559.1397094726562,
+              "x": 138.94496154785156,
+              "y": 418.0082702636719
+            },
+            "block_id": "b2",
+            "pageIndex": 0,
+            "pageNumber": 1
+          }
+        ]
+      },
+      "supplier": {
+        "bbox": {
+          "height": 28,
+          "width": 358,
+          "x": 338,
+          "y": 424
+        },
+        "confidence": 0.95,
+        "confidenceComponents": {
+          "groundingScore": 0.95,
+          "source": "no-logprobs"
+        },
+        "match": "id_match",
+        "pageIndex": 0,
+        "pageNumber": 1,
+        "source_bboxes": [
+          {
+            "bbox": {
+              "height": 111.99172973632812,
+              "width": 559.1397094726562,
+              "x": 138.94496154785156,
+              "y": 418.0082702636719
+            },
+            "block_id": "b2",
+            "pageIndex": 0,
+            "pageNumber": 1
+          }
+        ]
+      },
+      "total_amount": {
+        "bbox": {
+          "height": 30,
+          "width": 124,
+          "x": 397,
+          "y": 697
+        },
+        "confidence": 0.9696927825876808,
+        "confidenceComponents": {
+          "formatScore": 1,
+          "groundingScore": 0.95,
+          "source": "no-logprobs"
+        },
+        "match": "id_match",
+        "pageIndex": 0,
+        "pageNumber": 1,
+        "source_bboxes": [
+          {
+            "bbox": {
+              "height": 40.12066650390625,
+              "width": 480.82318115234375,
+              "x": 138.9951171875,
+              "y": 686.8793334960938
+            },
+            "block_id": "b4",
+            "pageIndex": 0,
+            "pageNumber": 1
+          }
+        ]
+      },
+      "invoice_date": {
+        "bbox": {
+          "height": 27,
+          "width": 169,
+          "x": 236,
+          "y": 502
+        },
+        "confidence": 0.9696927825876808,
+        "confidenceComponents": {
+          "formatScore": 1,
+          "groundingScore": 0.95,
+          "source": "no-logprobs"
+        },
+        "match": "id_match",
+        "pageIndex": 0,
+        "pageNumber": 1,
+        "source_bboxes": [
+          {
+            "bbox": {
+              "height": 111.99172973632812,
+              "width": 559.1397094726562,
+              "x": 138.94496154785156,
+              "y": 418.0082702636719
+            },
+            "block_id": "b2",
+            "pageIndex": 0,
+            "pageNumber": 1
+          }
+        ]
+      }
+    }
+  },
+  "usage": {
+    "data_extraction_credits": {
+      "cost": 15,
+      "remainingCredits": 4985
+    },
+    "price_composition": {
+      "extract": {
+        "cost": 6,
+        "currency": "data_extraction_credits",
+        "unit_cost": 6,
+        "units": 1
+      },
+      "parse": {
+        "cost": 9,
+        "currency": "data_extraction_credits",
+        "unit_cost": 9,
+        "units": 1
+      }
+    }
+  }
+}
