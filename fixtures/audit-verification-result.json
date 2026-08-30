@@ -1,0 +1,40 @@
+{
+  "schema": "compliance-copilot-audit-verification-v1",
+  "source_manifest": "fixtures/audit-proof.json",
+  "entries": [
+    {
+      "run": "RUN01",
+      "file": "fixtures/extract-proof.json",
+      "expected_sha256": "1b49873e686dc385a61cdeb8208bc816169ef7dbdf927b6cd3f3fffbb21b3004",
+      "actual_sha256": "1b49873e686dc385a61cdeb8208bc816169ef7dbdf927b6cd3f3fffbb21b3004",
+      "status": "MATCH"
+    },
+    {
+      "run": "RUN02",
+      "file": "fixtures/triage-result.json",
+      "expected_sha256": "7089fd81d0bc90f18944a4566ea72cd6a9e89fa78802c2ea6a61571898505d50",
+      "actual_sha256": "7089fd81d0bc90f18944a4566ea72cd6a9e89fa78802c2ea6a61571898505d50",
+      "status": "MATCH"
+    },
+    {
+      "run": "RUN03",
+      "file": "fixtures/human-review-result.json",
+      "expected_sha256": "3b4e20e425f8e908565ac8674e2163550f226aeef133bf5623059a636579c3fc",
+      "actual_sha256": "3b4e20e425f8e908565ac8674e2163550f226aeef133bf5623059a636579c3fc",
+      "status": "MATCH"
+    },
+    {
+      "run": "RUN04",
+      "file": "fixtures/final-document.json",
+      "expected_sha256": "1d25a198260ebf18f7aa9efce22fec1591f81877863616c0254f7aafff321a87",
+      "actual_sha256": "1d25a198260ebf18f7aa9efce22fec1591f81877863616c0254f7aafff321a87",
+      "status": "MATCH"
+    }
+  ],
+  "chain_hash": {
+    "expected": "83dce50b87c9cb9309848f3aecbe5d586a46dabd26739a9656e438da7861376f",
+    "recomputed": "83dce50b87c9cb9309848f3aecbe5d586a46dabd26739a9656e438da7861376f",
+    "status": "MATCH"
+  },
+  "overall_status": "VERIFIED"
+}
