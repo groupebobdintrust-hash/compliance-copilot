@@ -1,0 +1,30 @@
+{
+  "schema": "compliance-copilot-audit-proof-v1",
+  "entries": [
+    {
+      "run": "RUN01",
+      "label": "extraction",
+      "file": "fixtures/extract-proof.json",
+      "sha256": "1b49873e686dc385a61cdeb8208bc816169ef7dbdf927b6cd3f3fffbb21b3004"
+    },
+    {
+      "run": "RUN02",
+      "label": "triage",
+      "file": "fixtures/triage-result.json",
+      "sha256": "7089fd81d0bc90f18944a4566ea72cd6a9e89fa78802c2ea6a61571898505d50"
+    },
+    {
+      "run": "RUN03",
+      "label": "human_review",
+      "file": "fixtures/human-review-result.json",
+      "sha256": "3b4e20e425f8e908565ac8674e2163550f226aeef133bf5623059a636579c3fc"
+    },
+    {
+      "run": "RUN04",
+      "label": "final_document",
+      "file": "fixtures/final-document.json",
+      "sha256": "1d25a198260ebf18f7aa9efce22fec1591f81877863616c0254f7aafff321a87"
+    }
+  ],
+  "chain_hash": "83dce50b87c9cb9309848f3aecbe5d586a46dabd26739a9656e438da7861376f"
+}
