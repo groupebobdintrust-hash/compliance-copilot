@@ -1,0 +1,35 @@
+{
+  "source_file": "fixtures/extract-proof.json",
+  "threshold": 0.9,
+  "fields": {
+    "invoice_number": {
+      "value": "INV-2026-001",
+      "confidence": 0.95,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    },
+    "supplier": {
+      "value": "ACME Test Services Ltd",
+      "confidence": 0.95,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    },
+    "total_amount": {
+      "value": 125000,
+      "confidence": 0.9696927825876808,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    },
+    "invoice_date": {
+      "value": "2026-08-30",
+      "confidence": 0.9696927825876808,
+      "status": "AUTO_VALIDATED",
+      "reason": "confidence >= 0.90"
+    }
+  },
+  "global_verdict": "AUTO_VALIDATED",
+  "summary": {
+    "auto_validated_count": 4,
+    "needs_review_count": 0
+  }
+}
