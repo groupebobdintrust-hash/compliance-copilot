@@ -5,8 +5,8 @@
     {
       "run": "RUN01",
       "file": "fixtures/extract-proof.json",
-      "expected_sha256": "1b49873e686dc385a61cdeb8208bc816169ef7dbdf927b6cd3f3fffbb21b3004",
-      "actual_sha256": "1b49873e686dc385a61cdeb8208bc816169ef7dbdf927b6cd3f3fffbb21b3004",
+      "expected_sha256": "036fb070861ac782627a6b4ad4e75a17aec7af3803c9eff2bf0001c91f6ea769",
+      "actual_sha256": "036fb070861ac782627a6b4ad4e75a17aec7af3803c9eff2bf0001c91f6ea769",
       "status": "MATCH"
     },
     {
@@ -32,8 +32,8 @@
     }
   ],
   "chain_hash": {
-    "expected": "83dce50b87c9cb9309848f3aecbe5d586a46dabd26739a9656e438da7861376f",
-    "recomputed": "83dce50b87c9cb9309848f3aecbe5d586a46dabd26739a9656e438da7861376f",
+    "expected": "6fd3b6fed327c285c76a9336a8607156a96f72a44cd76911b2bb0dfee1669e69",
+    "recomputed": "6fd3b6fed327c285c76a9336a8607156a96f72a44cd76911b2bb0dfee1669e69",
     "status": "MATCH"
   },
   "overall_status": "VERIFIED"
